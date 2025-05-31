@@ -1,0 +1,43 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.cov
+
+# Dependency directories (remove the comment below if you use Go modules)
+/vendor/
+
+# Go workspace file
+*.code-workspace
+
+# IDE/editor folders
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test binary, build and coverage artifacts
+*.test
+*.bench
+*.prof
+*.coverprofile
+*.pb.go
+
+# Go modules
+/go.sum
+/go.mod
+
+# Parquet and CSV test artifacts
+*.parquet
+*.csv
