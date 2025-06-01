@@ -35,8 +35,8 @@ Thumbs.db
 *.pb.go
 
 # Go modules
-/go.sum
-/go.mod
+/
+/
 
 # Parquet and CSV test artifacts
 *.parquet
