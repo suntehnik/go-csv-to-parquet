@@ -125,11 +125,6 @@
 - SchemaLoader становится критически важным компонентом архитектуры, отвечающим за корректность и надёжность всего пайплайна.
 - **CSVReader**: Стриминг чтения CSV, преобразование строк в Arrow values.
 - **ArrowRecordBatchBuilder**: Формирует batch-ы Arrow RecordBatch согласно Arrow Schema.
-- **ParquetFileWriter**: Использует Arrow Table/RecordBatch для записи в Parquet (через Arrow API).
-- **StorageAdapter**: Унифицированный интерфейс для записи файлов (локально или в S3).
-- Batch-обработка и стриминг реализуются на уровне Arrow RecordBatch.
-- Нет генерации Go-структур через reflect: используется Arrow Schema.
-- Вся обработка типов и маппинг — через Arrow типы.
 
 ### Ключевые изменения и вызовы
 - Архитектура строится вокруг Arrow Table/RecordBatch, а не Go-структур.
